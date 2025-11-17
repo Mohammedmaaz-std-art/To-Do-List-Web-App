@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(72, 19, 146);
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+/* Improved responsive container */
+.container {
+  background: white;
+  width: 100%;
+  max-width: 380px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  display: flex;
+  gap: 30;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #5c06cd;
+  border-radius: 5px;
+}
+
+/* Focus styles for accessibility */
+#taskInput:focus,
+#addBtn:focus,
+.delete-btn:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+#addBtn {
+  padding: 10px 15px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  background: #0056b3;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  transition: all 0.15s ease;
+}
+
+/* Hover animation for premium feel */
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
